@@ -1,10 +1,12 @@
 <?php
-
 namespace App\Http\Controllers;
 
-use Laravel\Lumen\Routing\Controller as BaseController;
+use App\Serie;
 
-class Controller extends BaseController
+class SeriesController extends BaseController
 {
-    //
+    public function __construct()
+    {
+        $this->classe = Serie::class;
+    }
 }
